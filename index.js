@@ -43,7 +43,7 @@ async function getUser() {
 
 (async () => {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, { agent: agent });
         console.log("worked on node-fetch");
       } catch (error) {
         console.error("error on node-fetch");
